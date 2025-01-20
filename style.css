@@ -129,6 +129,7 @@ footer {
     margin: 0; 
 }
 
+/*Media query för mobiltelefoner*/
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px; 
@@ -140,8 +141,8 @@ footer {
     }
 
     #hero-section h2 {
-        font-size: 36px; 
-        padding: 8px 16px;
+        font-size: 28px; 
+        padding: 8px 16px; 
     }
 
     #breadtext {
