@@ -74,6 +74,32 @@ header nav a:hover {
     padding-bottom: 15px;
 }
 
+#breadtext h3 {
+    text-align: center;
+}
+
+.text-and-image {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.text-container {
+    width: 60%; 
+}
+
+.image-container {
+    width: 35%; 
+    margin-left: 20px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+}
+
 .container {
     display: flex;
     gap: 40px;
@@ -136,7 +162,32 @@ footer {
     margin: 0;
 }
 
-/*Media query för mobiltelefoner*/
+/* Light Mode */
+body.light-mode {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+body.light-mode header {
+    background-color: #F28C28;
+}
+
+body.light-mode #hero-section h2 {
+    color: black;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+body.light-mode #breadtext {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body.light-mode footer {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+/* Media query för mobiler */
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
@@ -151,11 +202,11 @@ footer {
 
     #hero-section h2 {
         font-size: 35px;
-        white-space: nowrap; /* Tvinga texten att hålla sig på en rad */
+        white-space: nowrap;
         text-align: center;
         padding: 8px 12px;
         max-width: 90%;
-        overflow: hidden; /* Förhindra att text sticker ut om den är för lång */
+        overflow: hidden;
     }
 
     #breadtext {
@@ -164,7 +215,7 @@ footer {
         padding-right: 20px;
     }
 
-    .container {
+    .text-and-image {
         flex-direction: column;
         gap: 10px;
     }
