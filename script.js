@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.createElement('button');
     themeToggle.style.marginLeft = 'auto';
     themeToggle.style.padding = '8px 12px';
+    themeToggle.style.marginLeft = '16px';
     themeToggle.style.border = 'none';
     themeToggle.style.backgroundColor = '#fff';
     themeToggle.style.cursor = 'pointer';
